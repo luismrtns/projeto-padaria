@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="estilo.css">
+    <script src="script..js" defer></script>
+    <title>Santo Trigo</title>
+</head>
+<body>
+    <header id="cabeca">
+        <div class="container">
+            <div class="flex">
+            <a href="index.html"><img style="height: 110px;" src="img/logo-marrom.svg" alt=""></a>
+                <nav>
+                    <ul>
+                        <li><a href="#">Home</a></li>
+                        <li><a href="#">Planos</a></li>
+                        <li><a href="#">Contatos</a></li>
+                        <li><a href="#">Sobre nós</a></li>
+                        <li><ion-icon class="insta" name="logo-instagram"></ion-icon></li>
+                        <li><ion-icon class="zap" name="logo-whatsapp"></ion-icon></li>
+                        <li><ion-icon class="carrinho" name="cart-outline"></ion-icon></li>
+                    </ul>
+                </nav><!--nav-->
+                <div class="btn-login">
+                    <a href="#"><button>Login</button></a>
+                </div><!--btn-login-->
+            </div><!--flex-->
+        </div><!--conteiner-->
+    </header>
+
+    <section class="banner">
+        <p>Padaria <span class="santo">Santo Trigo</span></p>
+        <a class="links-pedidos" href="#"><button class="pedido">Monte seu pedido!</button></a>
+        <a class="links-pedidos" href="#"><button class="pedido">faça já seu pedido!</button></a>
+    </section>
+
+    <main>
+        <div class="sobre-nos">
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Amet et labore non autem quod beatae exercitationem, eveniet ad, asperiores facilis, sunt ducimus? Omnis debitis fuga, aperiam incidunt voluptatem laboriosam pariatur!
+            Rerum nam eveniet, ab quas deleniti quidem dolorem ipsum doloribus iure, inventore distinctio eum asperiores tempore cum voluptas magni atque quasi aperiam. Voluptatum, tenetur. Ipsa voluptate reprehenderit vitae quisquam dolor!
+            Distinctio obcaecati reprehenderit, tempora libero veniam alias architecto iusto labore sapiente, voluptate nam? Repudiandae expedita dicta a ipsam, eveniet laboriosam animi odit voluptas eaque architecto, doloribus et aperiam est rem.</p>
+            
+        </div>
+        
+    </main>
+    <!--<header>
+        <img style="height: 100px; margin-left: 20px; margin-top: 5px;" src="imagens/logo-pao.svg" alt="">
+       <h1>Santo Trigo</h1> 
+       <menu>
+        <ul>
+            <a href="">
+                <li>Produtos</li>
+            </a>
+            <a href="">
+                <li>Contatos</li>
+            </a>
+            <a href="">
+                <li>Sobre nós</li>
+            </a>
+            <a href="">
+                <li>Login</li>
+            </a>
+        </ul>
+       </menu>
+    </header><-->
+    <!--<main>
+        <div>
+            <img src="imagens/720633_14.svg" alt="ícones de alimentos que são vendidos em padaria">
+        </div>
+    </main><-->
+    
+
+    <script>
+        window.addEventListener("scroll", function(){
+            var cab = document.querySelector('#cabeca')
+            cab.classList.toggle('rolagem', window.scrollY > 1) //adicionando uma classe dinamicamente à variável cab
+            //eu quero q a classe rolagem seja adicionada sempre que a janela tiver uma janela no eixo vertical
+        })
+    </script>
+
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+</body>
+</html>
