@@ -84,7 +84,7 @@ header .listinha{
 }
 
 header .listinha li a{
-    padding: 3rem 1rem 2rem 1rem;
+    padding: 3rem 1rem 3rem 1rem;
     color: var(--cor-1);
     font-size: 1.8rem;
     text-transform: uppercase;
@@ -194,10 +194,6 @@ section.banner{
     color: var(--cor-4);
     font-weight: lighter;
     font-family: 'Medula one';
-}
-
-.links-pedidos{
-    display: flex;
 }
 
 .btns-sec button{
