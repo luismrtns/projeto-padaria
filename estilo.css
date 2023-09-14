@@ -50,17 +50,6 @@ body{
     color: #593E2E;
 }
 
-/*div.container{
-    max-width: 1280px;
-    margin: auto;
-}*/
-
-/*div.flex{
-    display: flex;
-    align-items: center;
-    justify-content: space-around;
-}*/
-
 header{
     background-color: var(--cor-3);
     width: 100%;
@@ -122,24 +111,6 @@ header.rolagem button:hover{
     background-color: var(--cor-4);
     color: var(--cor-1);
 }
-
-/*header ul{
-    list-style-type: none;
-}
-
-header li{
-    display: inline-block;
-    margin: 0 20px;
-}
-
-header a{
-    position: relative;
-    font-size: 20px;
-    text-decoration: none;
-    color: var(--cor-4);
-    transition: .3s ease;
-    font-weight: bold;
-}*/
 
 /*nav a::after{
     content: '';
@@ -212,9 +183,6 @@ section.banner{
 }
 
 .banner p{
-    /*position: relative;
-    bottom: 120px;
-    left: 178px;*/
     color: var(--cor-1);
     font-family: 'Medula one';
     font-size: 50px;
@@ -263,48 +231,3 @@ main{
     padding: 20px;
     text-align: justify;
 }
-
-
-/*h1{
-    display: flex;
-    align-items: center;
-    font-family: 'Medula One', cursive;
-    font-size: 45px;
-    color: var(--cor-4);
-}
-
-header{
-    position: fixed;
-    display: flex;
-    width: 100%;
-    justify-content: space-between;
-    align-items: center;
-}
-
-menu li{
-    display: inline;
-}
-
-menu a{
-    font-size: 1.3em;
-    font-weight: bolder;
-    font-family: 'Alegreya Sans SC';
-    margin: auto;
-    margin: 25px;
-    color: var(--cor-4);
-    border-bottom: 2px solid transparent;
-    transition: .3s;
-    text-decoration: none;
-}
-
-main{
-    background-color: var(--cor-5);
-}
-
-div{
-   height: 1%; 
-}
-
-div img{
-    width: 100%;
-}*/
