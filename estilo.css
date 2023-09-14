@@ -9,16 +9,16 @@
   }
   
   ::-webkit-scrollbar-track { /*define o estilo da área da scrollbar onde o conteúdo não está visível.*/
-    background: transparent; 
+    background-color: transparent;
   }
   
   ::-webkit-scrollbar-thumb { /*define o estilo do polegar (a parte que você arrasta) da scrollbar.*/
     background: var(--cor-4);
-    border-radius: 5px;
+    border-radius: 20px;
   }
   
   ::-webkit-scrollbar-thumb:hover {
-    background: var(--cor-3);
+    background: var(--cor-1);
   }
 
 *{
@@ -36,23 +36,24 @@
     --cor-3: #8C4F2B;
     --cor-4: #DD9353;
     --cor-5: #593E2E;
+    --cor-6: #0f0801;
 }
 
 html{
     width: 100vw;
     height: 100vh;
-    font-size: 62.5%;
+    font-size: 62.5%; /*vai ajudar na responsividade, deixando a fonte mais responsiva*/
     overflow-x: hidden;
 }
 
 body{
-    background-color: var(--cor-1);
+    background-color: var(--cor-6);
     color: #593E2E;
 }
 
 header{
     background-color: var(--cor-3);
-    width: 100%;
+    width: 100vw;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -162,7 +163,7 @@ ion-icon{
 
 section.banner{
     height: 100vh;
-    width: 100%;
+    width: 100vw;
     background-image: linear-gradient(rgba(29,29,29,0.8), rgba(29,29,29,0.8)),url(img/croissants-bagels-e-pao-quadro\ \(1\).jpg);
     background-position: center center;
     background-repeat: no-repeat;
@@ -214,16 +215,52 @@ section.banner{
 
 .btns-sec button:hover{
     background-color: transparent;
-    border: 3px solid var(--cor-4);
+    border: 2px solid var(--cor-4);
     color: var(--cor-1);
 }
 
-main{
-    background-color: var(--cor-1);
-    color: var(--cor-5);
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: 20px;
-    font-weight: normal;
-    padding: 20px;
-    text-align: justify;
+.sobre-nos{
+    background-color: var(--cor-6);
+    color: var(--cor-1);
+    width: 100%;
+    padding-bottom: 5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.sobre-nos img{
+    width: 350px;
+    margin-top: 10rem;
+    margin-left: 10rem;
+    border: 2px solid var(--cor-3);
+    border-radius: 8px;
+}
+
+.main{
+    display: flex; /*vai deixar o conteudo um do lado do outro*/
+    justify-content: space-between;
+}
+
+.content-sobre{
+    display: flex;
+    flex-direction: column; /*vai deixar o conteudo um cima do outro*/
+    justify-content: center;
+    width: 400px;
+    font-size: 1.6rem;
+}
+
+.content-sobre h2{
+    color: var(--cor-4);
+    text-align: center;
+    margin-bottom: 1rem;
+    font-size: 6rem;
+    font-family: 'Medula one', sans-serif;
+}
+
+.content-sobre p{
+    text-align: center;
+    font-size: 1.8rem;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 100;
 }
