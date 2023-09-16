@@ -22,6 +22,22 @@
         padding: 0px;
     }
 
+    header .listinha li a{
+    padding: 0rem 1rem 0rem 1rem;
+    color: var(--cor-1);
+    font-size: 1.6rem;
+    text-transform: uppercase;
+    font-weight: 500;
+    font-family: 'Alegreya Sans SC';
+    transition: all 200ms ease-in;
+}
+
+    header .listinha li a:hover{
+        background-color: transparent;
+        border: none;
+        font-size: 1.8em;
+    }
+
     .sobre-nos img{
         display: flex;
         margin: auto;
@@ -104,7 +120,7 @@
     .cabeca.on .listinha li{
         display: flex;
         justify-content: center;
-        margin: -10px;
+        margin: 10px;
     }
 
     .cabeca.on .listinha li a{
