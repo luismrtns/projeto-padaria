@@ -273,7 +273,7 @@ section.banner{
     margin-top: 2rem;
     margin-bottom: 2rem;
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 550px)); /*vão ficar organizadas em tela e o tamanho min é 250px e o max é de 550px*/
+    grid-template-columns: repeat(auto-fit, minmax(150px, 350px)); /*vão ficar organizadas em tela e o tamanho min é 250px e o max é de 550px*/
     justify-content: center;
     align-items: center;
     gap: 25px;

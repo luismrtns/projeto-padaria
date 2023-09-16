@@ -1,0 +1,38 @@
+@charset "UTF-8";
+
+@media screen and (max-width: 1200px){
+    .main{
+        display: block;
+    }
+
+    header{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        height: 22%;
+        padding: 0px;
+    }
+
+    .sobre-nos img{
+        display: flex;
+        margin: auto;
+        margin-top: 2.5rem;
+        width: 400px;
+    }
+}
+
+@media screen and (max-width: 992px){
+    header{
+        height: 22%;
+    }
+
+    html{
+        font-size: 50%;
+    }
+}
+
+@media screen and(max-width: 768px){
+    .sobre-nos img{
+        width: 250px;
+    }
+}
