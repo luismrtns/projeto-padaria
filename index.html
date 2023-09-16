@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="estilo.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.0/font/bootstrap-icons.css">
     <script src="script..js" defer></script>
     <title>Santo Trigo</title>
 </head>
@@ -12,13 +13,10 @@
             <div class="logo"><a href="index.html"><img src="img/logo-pao-branca.svg" alt=""></a></div>
                 <nav>
                     <ul class="listinha">
-                        <li><a href="#">Home</a></li>
-                        <li><a href="#">Planos</a></li>
-                        <li><a href="#">Contatos</a></li>
+                        <li><a href="#">Home <i class="bi bi-house"></i></a></li>
+                        <li><a href="#cardapio">Cardápio <i class="bi bi-card-list"></i></a></li>
+                        <li><a href="#contatos">Contatos <i class="bi bi-person-lines-fill"></i></a></li>
                         <li><a href="#sobre-nos">Sobre nós</a></li>
-                        <li><ion-icon class="insta" name="logo-instagram"></ion-icon></li>
-                        <li><ion-icon class="zap" name="logo-whatsapp"></ion-icon></li>
-                        <li><ion-icon class="carrinho" name="cart-outline"></ion-icon></li>
                     </ul>
                 </nav><!--nav-->
                 <!--<div class="btn-login">
@@ -40,7 +38,7 @@
     <section class="sobre-nos" id="sobre-nos">
         <div class="main">
             <div class="content-sobre">
-                <h3>Sobre nós</h2>
+                <h2>Sobre nós</h2>
                 <p>Somos a Padaria Santo Trigo, um pedacinho aconchegante da tradição gastronômica de Fortaleza, localizado no pitoresco bairro de Antônio Bezerra. Desde 2023, temos o orgulho de servir a nossa comunidade com pães frescos e deliciosos, doces irresistíveis e uma variedade de produtos assados feitos com paixão e dedicação. Na Padaria Santo Trigo, acreditamos na importância de ingredientes frescos e no amor que colocamos em cada fornada. Nossos padeiros artesanais trabalham incansavelmente para trazer a você o melhor em sabor e qualidade. Obrigado por fazer parte da nossa jornada. Sinta-se em casa!</p>
             </div>
              <div class="img-cozinha">
@@ -115,6 +113,28 @@
         </div>
     </section>
 
+    <section class="contatos" id="contatos">
+        <h3>Contatos</h3>
+        <div class="contatos-sessao">
+            <div>
+                <i class="bi bi-telephone"></i>
+                <span>(85) 94002-8922</span>
+            </div>
+            <div>
+                <i class="bi bi-instagram"></i>
+                <span>@padaria_Santo_trigo</span>
+            </div>
+            <div>
+                <i class="bi bi-google-play"></i>
+                <span>Baixe nosso aplicativo!</span>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <p>Site desenvolvido por <a href="https://github.com/luismrtns" target="_blank">Luís Martins <i class="bi bi-box-arrow-up-right"></i></a></p>
+    </footer>
+
     <script>
         window.addEventListener("scroll", function(){
             var cab = document.querySelector('#cabeca')
@@ -122,8 +142,5 @@
             //eu quero q a classe rolagem seja adicionada sempre que a janela tiver uma janela no eixo vertical
         })
     </script>
-
-    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
-    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
 </body>
 </html>
