@@ -1,6 +1,15 @@
 @charset "UTF-8";
 
-@media screen and (max-width: 1200px){
+:root{
+    --cor-1: #F2F2F2;
+    --cor-2: #BF9169;
+    --cor-3: #8C4F2B;
+    --cor-4: #DD9353;
+    --cor-5: #593E2E;
+    --cor-6: #0f0801;
+}
+
+@media (max-width: 1200px){
     .main{
         display: block;
     }
@@ -9,7 +18,7 @@
         flex-direction: column;
         justify-content: center;
         align-items: center;
-        height: 22%;
+        height: 20%;
         padding: 0px;
     }
 
@@ -17,22 +26,124 @@
         display: flex;
         margin: auto;
         margin-top: 2.5rem;
-        width: 400px;
     }
 }
 
-@media screen and (max-width: 992px){
+@media (max-width: 992px){
     header{
-        height: 22%;
+        height: 20%;
     }
 
     html{
         font-size: 50%;
     }
-}
 
-@media screen and(max-width: 768px){
-    .sobre-nos img{
+    sobre-nos img{
         width: 250px;
     }
+}
+
+@media (max-width: 768px){
+    html{
+        font-size: 45%;
+    }
+
+    header{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        padding: 0px 40px;
+    }
+
+    header .listinha{
+        display: none;
+    }
+
+    .um, .dois, .tres{ /* vai criar o menu hamburguer usando as divs */
+        width: 80%;
+        height: 2px;
+        background-color: var(--cor-1);
+        margin: 6px auto;
+        transition-duration: .3s;
+    }
+
+    .menu-toggle{
+        width: 30px;
+        height: 30px;
+    }
+
+    .cabeca.on{
+        position: fixed;
+        top: 0;
+        left: 0;
+        bottom: 0;
+        width: 100vw;
+        height: 40vh;
+        background-color: var(--cor-6);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .cabeca.on .logo{
+        display: none;
+    }
+
+    .cabeca.on .menu-toggle{
+        position: absolute;
+        right: 40px;
+        top: 20px;
+    }
+
+    .cabeca.on .listinha{
+        display: block;
+        margin: auto;
+        text-align: center;
+    }
+
+    .cabeca.on .listinha li{
+        display: flex;
+        justify-content: center;
+        margin: -10px;
+    }
+
+    .cabeca.on .listinha li a{
+        font-size: 2.1rem;
+    }
+
+    .cabeca.on .listinha li a:hover{
+        background-color: transparent;
+        color: var(--cor-4);
+        border: none;
+    }
+
+    .cabeca.on .menu-toggle .dois{
+        opacity: 0;
+    }
+
+    .cabeca.on .menu-toggle .um{
+        transform: rotate(45deg) translate(5px, -8px);
+    }
+
+    .cabeca.on .menu-toggle .tres{
+        transform: rotate(-45deg) translate(20px, -6px);
+    }
+
+    .itens-cardapio{
+        grid-template-columns: repeat(2, minmax(50px, 350px));
+    }
+
+    .contatos-sessao{
+        display: block;
+        text-align: center;
+        font-size: 2rem;
+    }
+
+    .contatos-sessao div{
+        margin: 1rem;
+    }
+}
+
+@media (max-width: 600px){
+
 }

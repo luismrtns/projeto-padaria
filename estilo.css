@@ -5,7 +5,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Medula+One&display=swap');
 
 ::-webkit-scrollbar {
-    width: 10px;
+    width: 7px;
   }
   
   ::-webkit-scrollbar-track { /*define o estilo da área da scrollbar onde o conteúdo não está visível.*/
@@ -99,7 +99,7 @@ header .listinha li a{
 
 header .listinha li a:hover{
     color: var(--cor-1);
-    background-color: var(--cor-4);
+    background-color: var(--cor-5);
     border-bottom: 4px solid var(--cor-1);
 }
 header.rolagem{
@@ -151,7 +151,7 @@ section.banner{
     background-position: center center;
     background-repeat: no-repeat;
     background-size: cover;
-    background-position-y: 75px;
+    background-position-y: 0px;
 
     display: flex;
     flex-direction: column;
@@ -208,6 +208,7 @@ section.banner{
     background-color: var(--cor-6);
     color: var(--cor-1);
     width: 100%;
+    height: auto;
     padding-bottom: 5rem;
     display: flex;
     align-items: center;
