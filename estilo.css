@@ -93,7 +93,7 @@ header .listinha{
 }
 
 header .listinha li a{
-    padding: 3rem 1rem 3rem 1rem;
+    padding: 3rem 1rem;
     color: var(--cor-1);
     font-size: 1.6rem;
     text-transform: uppercase;
@@ -224,8 +224,7 @@ section.banner{
     color: var(--cor-1);
     width: 100%;
     height: auto;
-    padding-top: 5rem;
-    padding-bottom: 5rem;
+    padding: 5rem 0;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -233,7 +232,7 @@ section.banner{
 
 .sobre-nos img{
     width: 250px;
-    margin-top: 8rem;
+    margin-top: 6rem;
     margin-left: 10rem;
     border: 2px solid var(--cor-3);
     border-radius: 50%;
